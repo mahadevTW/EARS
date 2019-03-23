@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<body>
+<h1>EARS - Dashboard</h1>
+    {% for name in videos %}
+    <!-- <tr>
+            <th> {{ name }} </th>
+        </tr> -->
+
+    <video width="320" height="240" controls>
+        <source src={{name}} type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <!-- <br>
+    Location
+<br> -->
+    {% endfor %}
+
+
+<script>
+{
+setTimeout(function() {
+  location.reload();
+}, 5000);
+}
+</script>
+
+
+
+<span id="sysStatus" style="font-weight: bold;">{{ status }}</span>
+
+</body>
+
+</html>
